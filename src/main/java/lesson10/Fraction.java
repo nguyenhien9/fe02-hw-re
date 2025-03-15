@@ -9,8 +9,8 @@ public class Fraction {
 
     public Fraction(int numerator, int denominator) {
         if (denominator == 0) {
-            System.err.println("Invalid denominator");
-            return;
+            throw new IllegalArgumentException();
+
         }
         this.numerator = numerator;
         this.denominator = denominator;
@@ -31,8 +31,7 @@ public class Fraction {
 
     public void setDenominator(int denominator) {
         if (denominator == 0) {
-            System.err.println("Invalid denominator");
-            return;
+            throw new IllegalArgumentException("Denominator cannot be zero");
         }
         this.denominator = denominator;
     }
@@ -47,6 +46,10 @@ public class Fraction {
         if (gcd != 0) {
             numerator /= gcd;
             denominator /= gcd;
+        }
+        if (denominator < 0) {
+            numerator = -numerator;
+            denominator = -denominator;
         }
 
     }
@@ -90,8 +93,11 @@ public class Fraction {
     }
 
     public Fraction divide(Fraction other) {
+        if (other.denominator == 0) {
+            throw new IllegalArgumentException("Cannot divide by zero");
+        }
         int num = this.numerator * other.denominator;
-        int den = this.denominator * other.denominator;
+        int den = this.denominator * other.numerator;
         return new Fraction(num, den);
     }
 
