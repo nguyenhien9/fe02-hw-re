@@ -1,0 +1,1 @@
+Đây là một đoạn text được ghi ra file sử dụng try-with-resources.
