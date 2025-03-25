@@ -5,12 +5,12 @@ import lesson13.utils.ScannerUtils;
 import java.util.Stack;
 
 public class HW04 {
-    ScannerUtils scannerUtils = new ScannerUtils();
+    ScannerUtils scannerUtil = new ScannerUtils();
     Stack<Character> stackStr = new Stack<>();
 
 
     public void reverseString() {
-        String input = scannerUtils.inputString("Enter a random string: ");
+        String input = scannerUtil.inputString("Enter a random string: ");
 
         // store into stack
         for (Character ch : input.toCharArray()) {
@@ -22,6 +22,7 @@ public class HW04 {
         }
 
         System.out.println("Reversed String: " + reversedString);
+        scannerUtil.close();
 
 
     }

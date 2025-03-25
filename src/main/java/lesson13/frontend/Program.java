@@ -12,8 +12,10 @@ public class Program {
 //        hw03.countUniqueNumbers();
 //        HW04 hw04 = new HW04();
 //        hw04.reverseString();
-        HW05 hw05 = new HW05();
-        hw05.printQueue();
+//        HW05 hw05 = new HW05();
+//        hw05.printQueue();
+        HW06 hw06 = new HW06();
+        hw06.studentManagement();
 
 
     }

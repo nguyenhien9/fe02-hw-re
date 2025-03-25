@@ -37,6 +37,7 @@ public class HW01 {
                     break;
                 case 5:
                     System.out.println("Goodbye!");
+                    scannerUtil.close();
                     return;
                 default:
                     break;

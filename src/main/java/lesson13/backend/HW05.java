@@ -6,11 +6,11 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class HW05 {
-ScannerUtils scannerUtils = new ScannerUtils();
+ScannerUtils scannerUtil = new ScannerUtils();
 Queue<Integer> queue = new LinkedList<>();
 
     public void printQueue(){
-        String input = scannerUtils.inputString("Enter a string of number, separating by commas or spaces : ");
+        String input = scannerUtil.inputString("Enter a string of number, separating by commas or spaces : ");
 
         String[] numbers = input.split("[,\\s]+");
 
@@ -27,6 +27,7 @@ Queue<Integer> queue = new LinkedList<>();
         while (!queue.isEmpty()){
             System.out.println(queue.poll() + " ");
         }
+        scannerUtil.close();
 
     }
 }
