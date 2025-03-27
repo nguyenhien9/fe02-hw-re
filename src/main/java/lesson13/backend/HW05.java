@@ -8,7 +8,6 @@ import java.util.Queue;
 public class HW05 {
 ScannerUtils scannerUtil = new ScannerUtils();
 Queue<Integer> queue = new LinkedList<>();
-
     public void printQueue(){
         String input = scannerUtil.inputString("Enter a string of number, separating by commas or spaces : ");
 

@@ -1,0 +1,4 @@
+Student{studentNumber='ST1000', name='Nguyen Ngoc Hien', age=18, average=9.0}
+Student{studentNumber='ST1001', name='Tran Van An', age=19, average=8.2}
+Student{studentNumber='ST1002', name='Le Tuan', age=18, average=8.0}
+Student{studentNumber='ST1003', name='Nguyenn Khanh', age=19, average=7.6}

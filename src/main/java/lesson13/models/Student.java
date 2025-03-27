@@ -13,6 +13,13 @@ public class Student {
         this.age = age;
         this.average = average;
     }
+    public Student(String studentNumber, String name, int age, double average) {
+        this.studentNumber = studentNumber;
+        this.name = name;
+        this.age = age;
+        this.average = average;
+
+    }
 
     private String generateStudentNumber() {
         return "ST" + (counter++);
@@ -43,6 +50,14 @@ public class Student {
 
     public void setAverage(double average) {
         this.average = average;
+    }
+
+    public static int getCounter() {
+        return counter;
+    }
+
+    public static void setCounter(int counter) {
+        Student.counter = counter;
     }
 
     @Override
